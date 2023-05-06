@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="PlaneType" class="control-label"></label>
-                <input asp-for="PlaneType" class="form-control" />
+                <select asp-for="PlaneType" asp-items="Html.GetEnumSelectList<AM.ApplicationCore.Domain.PlaneType>()" class="form-control"></select>
                 <span asp-validation-for="PlaneType" class="text-danger"></span>
             </div>
             <div class="form-group">
